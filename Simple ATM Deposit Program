@@ -1,0 +1,10 @@
+package ATM;
+import java.util.Scanner;
+public class ATM {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("请输入存款金额：");
+		double a = Double.parseDouble(sc.nextLine());
+		System.out.printf("当前已存入：%.2f元%n",a);
+	}
+}
