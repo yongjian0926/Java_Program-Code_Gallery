@@ -1,7 +1,8 @@
+package Calculate;
 import java.util.Scanner;
 public class Calculate {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
         System.out.print("请输入第一个数字：");
         int x = sc.nextInt();
         System.out.print("请输入第二个数字：");
@@ -11,5 +12,5 @@ public class Calculate {
         System.out.println(x + "*" + y + "=" + (x*y));
         System.out.println(x + "/" + y + "=" + (x/y));
         System.out.println(x + "%" + y + "=" + (x%y));
-    }
+	}
 }
