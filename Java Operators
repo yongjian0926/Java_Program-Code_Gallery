@@ -2,7 +2,7 @@ package data;                    // 包声明，类位于 data 包中
 import java.util.Scanner;        // 导入 Scanner 类用于键盘输入
 public class data {              // 定义公共类 data
 	public static void main(String[] args) {
-		System.out.print("请输入四位数：");       	// 提示用户输入
+		System.out.print("请输入四位数：");       		// 提示用户输入
 		Scanner sc = new Scanner(System.in);		// 创建 Scanner 对象
 		int number = sc.nextInt();              	// 读取整数
 
