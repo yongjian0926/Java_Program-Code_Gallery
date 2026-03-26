@@ -22,7 +22,7 @@ public class data {              // 定义公共类 data
 		int num = thousand + hundred + shi +ge;
 
     	// 三元运算符判断中奖，如果个，十，百，千，四位数相加的和大于30则为中奖
-		String str =(num>30)?"中奖":"未中奖";
+		String str = (num>30)?"中奖":"未中奖";
 		System.out.println(str);
 	}
 }
