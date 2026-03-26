@@ -1,0 +1,28 @@
+package data;                    // 包声明，类位于 data 包中
+import java.util.Scanner;        // 导入 Scanner 类用于键盘输入
+public class data {              // 定义公共类 data
+	public static void main(String[] args) {
+		System.out.print("请输入四位数：");        // 提示用户输入
+		Scanner sc = new Scanner(System.in);      // 创建 Scanner 对象
+		int number = sc.nextInt();                // 读取整数
+
+    // 分解各位数字
+		int thousand = number / 1000;             // 千位：整除 1000
+		int hundred = (number % 1000) / 100;      // 百位：先取余再整除
+		int shi = (number % 100) / 10;            // 十位：先取余再整除
+		int ge = number % 10 ;                    // 个位：直接取余
+
+		// 输出各位数字
+		System.out.println("千位是：" + thousand);
+		System.out.println("百位是：" + hundred);
+		System.out.println("十位是：" + shi);
+		System.out.println("个位是：" + ge);
+
+    // 计算各位数字之和
+		int num = thousand + hundred + shi +ge;
+
+    // 三元运算符判断中奖，如果个，十，百，千，四位数相加的和大于30则为中奖
+		String str =(num>30)?"中奖":"未中奖";
+		System.out.println(str);
+	}
+}
