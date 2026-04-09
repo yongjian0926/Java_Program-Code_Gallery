@@ -19,16 +19,17 @@ public class while_1 {
 				i = sc.nextInt();						// 获取用户输入的整数，赋值给变量i
 				switch(i) {		
 				case 1:
-					System.out.print("T恤	128元");
+					System.out.println("T恤	128元");
 					break;
 				case 2:
-					System.out.print("网球鞋		456元");
+					System.out.println("网球鞋		456元");
 					break;
 				case 3:
-					System.out.print("网球拍		256元");
+					System.out.println("网球拍		256元");
 					break;
+				default:System.out.println("数值无效");
 				}
-				System.out.print("是否继续（y/n）?");		// 询问用户是否继续购物
+				System.out.print("是否继续（y/n）:");		// 询问用户是否继续购物
 				str = sc.next();	// 【关键点3】获取用户输入的字符串（"y"或"n"），并更新变量str的值。
 				                    // 这一行决定了下一次while判断的结果。
 			}
