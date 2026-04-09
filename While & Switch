@@ -1,0 +1,37 @@
+package if_else;
+import java.util.Scanner;
+public class while_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+			String str = "y";	//【关键点1】定义控制循环的变量str，初始化为"y"。
+			                    // 这保证了程序一启动，while循环的条件就成立，能直接进入菜单。
+			
+			int i;			  	// 声明整型变量i，用于后面存储用户输入的商品编号
+			while(str.equals("y")) {	// 【关键点2】循环入口。只要str的内容是"y"，大括号内的代码就会重复执行。
+				
+				System.out.println("****************************************");
+				System.out.println("请选择购买的商品编号：");
+				System.out.println("1.T恤	2.网球鞋		3.网球拍");
+				System.out.println("****************************************");
+				// 上面4行：打印菜单界面，引导用户操作
+				
+				System.out.print("请输入商品编号:");		// 提示用户输入
+				i = sc.nextInt();						// 获取用户输入的整数，赋值给变量i
+				switch(i) {		
+				case 1:
+					System.out.print("T恤	128元");
+					break;
+				case 2:
+					System.out.print("网球鞋		456元");
+					break;
+				case 3:
+					System.out.print("网球拍		256元");
+					break;
+				}
+				System.out.print("是否继续（y/n）?");		// 询问用户是否继续购物
+				str = sc.next();	// 【关键点3】获取用户输入的字符串（"y"或"n"），并更新变量str的值。
+				                    // 这一行决定了下一次while判断的结果。
+			}
+			System.out.println("购物愉快！");		// 当str不等于"y"（即用户输入n）时，跳出循环，执行此行
+	}		// main方法结束
+}			// 类结束
