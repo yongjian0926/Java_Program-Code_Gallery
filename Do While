@@ -18,7 +18,7 @@ public class shoping_do_while {
                     System.out.println("iPad    6999RMB");
                     break;
                 case 3:
-                    System.out.println("Watch     12999RMB");
+                    System.out.println("Watch   1999RMB");
                     break;
                 default:
                     System.out.println("输入的商品编号无效！");
