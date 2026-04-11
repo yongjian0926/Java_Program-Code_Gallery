@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class shoping_do_while {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = "y";
+        do {
+            System.out.println("请选择要购买的商品：");
+            System.out.println("****************************************");
+            System.out.println("1.MacBook Pro   2.iPad  3.Watch");
+            System.out.println("****************************************");
+            System.out.print("请输入商品编号：");
+            int i = sc.nextInt();
+            switch (i) {
+                case 1:
+                    System.out.println("MacBook Pro     12999RMB");
+                    break;
+                case 2:
+                    System.out.println("iPad    6999RMB");
+                    break;
+                case 3:
+                    System.out.println("Watch     12999RMB");
+                    break;
+                default:
+                    System.out.println("输入的商品编号无效！");
+            }
+            System.out.print("是否继续(y/n):");
+            str = sc.next();
+        } while (str.equals("y"));
+        System.out.println("购物愉快！");
+    }
+}
